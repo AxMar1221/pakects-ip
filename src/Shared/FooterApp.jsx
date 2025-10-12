@@ -7,7 +7,7 @@ const tab = <>&nbsp;&nbsp;</>;
 export const FooterApp = () => {
 
   return (
-    <div className="container">
+    <div className="container" mt={2}>
       <Box className="footer">
         <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           <img src="https://avatars.githubusercontent.com/u/85906328?v=4" alt="avatar-github" className="avatar-github" />
