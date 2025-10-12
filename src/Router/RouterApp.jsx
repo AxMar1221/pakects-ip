@@ -10,6 +10,7 @@ export const RouterApp = () => {
         <Routes>
             <Route path='/*' element={<PagesRouterApp />} />
         </Routes>
+        <FooterApp />
     </>
   )
 }
