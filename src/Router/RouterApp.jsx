@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom"
-import { NavBarApp } from "../Shared"
+import { FooterApp, NavBarApp } from "../Shared"
 import { PagesRouterApp } from "../components/Router"
 
 
