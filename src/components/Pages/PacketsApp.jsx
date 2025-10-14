@@ -146,7 +146,7 @@ export default function PacketDecoderApp() {
               ) : (
                 decoded.map((d) => (
                   <Paper key={d.group} sx={{ p: 2, mb: 1 }} variant="outlined">
-                    <Typography variant="subtitle2">Grupo {d.group} — Tipo: {d.type} — Total: {d.total}</Typography>
+                    <Typography variant="subtitle2">Paquete {d.group} — Tipo: {d.type} — Total: {d.total}</Typography>
                     <Typography variant="body1" sx={{ fontFamily: "monospace", mt: 1 }}>{d.text}</Typography>
                   </Paper>
                 ))
