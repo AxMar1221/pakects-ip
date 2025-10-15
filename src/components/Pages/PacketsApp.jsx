@@ -6,6 +6,7 @@ export default function PacketDecoderApp() {
   // const [packets, setPackets] = useState([]);
   const [decoded, setDecoded] = useState([]);
   const [errors, setErrors] = useState([]);
+  const [decoding, setDecoding] = useState(false);
 
   function parsePackets(text) {
     const lines = text
@@ -98,8 +99,16 @@ export default function PacketDecoderApp() {
 
             <Grid container spacing={2}>
               <Grid item>
-                <Button variant="contained" onClick={() => parsePackets(input)}>
-                  Decodificar
+                <Button 
+                  variant="contained"
+                  onClick={() => 
+                    setDecoding(true);
+                    parsePackets(input);
+                setTimeout(() => setDecoding(false), 500);
+                }}
+                  disable={decoding}
+                >
+                {decoding ? "Decodificando..." : "Decodificar"}
                 </Button>
               </Grid>
               <Grid item>
